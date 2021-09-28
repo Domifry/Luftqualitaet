@@ -1,0 +1,13 @@
+#/etc/systemd/system
+
+[Unit]
+Description=luft
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/luft.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
