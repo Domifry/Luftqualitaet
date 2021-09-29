@@ -78,6 +78,9 @@ Lade die Datei auf deinen Raspberry PI. Diese Datei liest die Temperatur, Luftfe
 * Damit weist du, dass dein Sensor funktioniert
 * Du musst nichts weiter tun, weil in der luft.py ist bereits der ganze Ausleseprozess eingebaut
 
+# fehler.py
+Diese Datei sendet dir eine Push-Nachricht wenn das Script neustartet, weil es fehlgeschlagen ist. Öffne die Datei, trage deine Daten von Pushhover ein und speichere sie ab. Du brauchst den Pushhover Account auch noch später deswegen kannst du ihn hier schon einrichten. Die Kosten sind 5 Euro einmalig - 30 Tage kostenlos zum Test. Trage hier dein API Token und dein USER Token ein. 
+
 # luft.service
 Dieses Script stellt sich, dass sich alle 15 Minuten das Script startet. 
 * Lege die Datei in /etc/systemd/system
