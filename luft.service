@@ -5,6 +5,7 @@ Description=luft
 
 [Service]
 Type=simple
+ExecStartPre=/usr/bin/python3 /home/pi/fehler.py
 ExecStart=/usr/bin/python3 /home/pi/luft.py
 Restart=always
 RestartSec=10
