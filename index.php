@@ -191,7 +191,7 @@ if (mysqli_connect_errno())
 // Suche die Anzahl der Tabellen
 $result = mysqli_query($con, "SELECT COUNT(ID) as anzahl FROM `Temperatur`");
 $data=mysqli_fetch_assoc($result);
-$total = $data['anzahl']+3;
+$total = $data['anzahl'];
 //suche nun den letzten Wert
 $result = mysqli_query($con, 'SELECT * FROM `Temperatur` WHERE ID='.$total);
 $row = $result->fetch_array();
