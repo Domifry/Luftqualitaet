@@ -15,7 +15,6 @@ while True:
    else:
     statement = "INSERT INTO `d03794ba`.`co2` (`ID`, `co2`, `Zeit`) VALUES (NULL, '" + wert  + "', current_timestamp())"
     cursor.execute(statement)
-    print("eintragCO2") 
    humidity, temperature = Adafruit_DHT.read_retry(22, 4)
    if humidity is None:
     humidity = "Fehler"
